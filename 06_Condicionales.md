@@ -1,6 +1,6 @@
 # DWEC UT01: Arquitecturas y lenguajes de programación en clientes web.
 
-## Condicionales
+## Estructuras condicionales
 
 A veces, necesitamos realizar diferentes acciones en función de diferentes condiciones. Para hacer eso, podemos usar la declaración `if` y el operador condicional `?`, que también se llama operador ternario.
 
@@ -27,11 +27,11 @@ La declaración if (…) evalúa la expresión entre paréntesis y convierte el 
 * Cualquier otro valor se convierte a `true`
 
 ```js
-if (0) { // 0 is falsy
+if (0) { // 0 es valor falsy
   ...
 }
 
-if (1) { // 1 is truthy
+if (1) { // 1 es valor truthy
   ...
 }
 
@@ -77,9 +77,9 @@ El operador ternario es una especie de `if` compacto que tienen la mayoría de l
 Su estructura es la siguiente: `(condición) ? valor verdadero : valor falso`.
 
 ```js
-let result = (condición) ? valor verdadero : valor falso;
+let resul = (condición) ? valor verdadero : valor falso;
 
-let accessAllowed = (edad > 18) ? true : false;
+let mayorEdad = (edad > 18) ? true : false;
 ```
 
 Técnicamente, podemos omitir los paréntesis alrededor de la `edad > 18`. El operador del signo de interrogación tiene una precedencia baja, por lo que se ejecuta después de la comparación >.
@@ -89,12 +89,12 @@ Técnicamente, podemos omitir los paréntesis alrededor de la `edad > 18`. El op
 Es posible encadenar una secuencia de condiciones ternarias de manera que consigamos el mismo resultado que con multiples `else if ().
 `
 ```js
-let edad = prompt('age?', 18);
+let edad = prompt('Que edad tienes?', 18);
 
-let mensaje = (edad < 3) ? 'Hi, baby!' :
-  (edad < 18) ? 'Hello!' :
-  (edad < 100) ? 'Greetings!' :
-  'What an unusual age!';
+let mensaje = (edad < 3) ? 'Hola pequeñin!' :
+  (edad < 18) ? 'Hola joven!' :
+  (edad < 100) ? 'Buenos dias señor!' :
+  'Esta usted como una rosa!';
 
 console.log( mensaje );
 ```
@@ -105,13 +105,13 @@ Esto seria lo mismo pero escrito de otra manera.
 let edad = prompt('age?', 18);
 
 if (edad < 3) {
-  mensaje = 'Hi, baby!';
+  mensaje = 'Hola pequeñin!';
 } else if (edad < 18) {
-  mensaje = 'Hello!';
+  mensaje = 'Hola Joven!';
 } else if (edad < 100) {
-  mensaje = 'Greetings!';
+  mensaje = 'Buenos dias señor!';
 } else {
-  mensaje = 'What an unusual age!';
+  mensaje = 'Esta usted como una roas!';
 }
 
 console.log( mensaje );

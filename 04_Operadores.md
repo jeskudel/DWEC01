@@ -114,11 +114,11 @@ Todos los operadores de comparación devuelven un valor booleano:
 * *falso*: significa "no", "incorrecto" o "falso".
 
 ```js
-console.log( 2 > 1 );  // true (correct)
-console.log( 2 == 1 ); // false (wrong)
-console.log( 2 != 1 ); // true (correct)
+console.log( 2 > 1 );  // true 
+console.log( 2 == 1 ); // false 
+console.log( 2 != 1 ); // true 
 
-let result = 5 > 4; // assign the result of the comparison
+let result = 5 > 4; // se asigna el resultado de la operación
 console.log( result ); // true
 ```
 
@@ -133,8 +133,8 @@ console.log( 'Bee' > 'Be' ); // true
 Al comparar valores de diferentes tipos, JavaScript convierte los valores en números.
 
 ```js
-console.log( '2' > 1 ); // true, string '2' becomes a number 2
-console.log( '01' == 1 ); // true, string '01' becomes a number 1
+console.log( '2' > 1 ); // true, el string "2" se convierte en 2
+console.log( '01' == 1 ); // true, el string "01" se convierte en 1
 ```
 
 Para valores booleanos `true` se convierte en "1" y `false` se convierte en "0".
@@ -159,12 +159,12 @@ Esto sucede porque el operador de igualdad == convierte operandos de diferentes 
 Un operador de igualdad estricta === verifica la igualdad sin conversión de tipo.
 
 ```js
-console.log( 0 === false ); // false, because the types are different
+console.log( 0 === false ); // false, no son del mismo tipo
 ```
 
 Hay un comportamiento no intuitivo cuando se comparan valores `null` o `undefined` con otros valores.
 
 ```js
 console.log( null === undefined ); // false cada uno tiene es un tipo de dato direrente
-console.log( null == undefined ); // true Hay una regla especial. Estos dos son una iguales entre si, pero no con ningún otro valor.
+console.log( null == undefined ); // true, estos dos son una iguales entre si, pero no con ningún otro valor.
 ```

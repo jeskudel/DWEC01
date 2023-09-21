@@ -75,7 +75,7 @@ Para declarar una variable constante (inmutable), hacemos uso de la palabra rese
 ```js
 const miIdentificador = 'H35L5';
 
-miIdentificador = 'H66M0'; // error, can't reassign the constant!
+miIdentificador = 'H66M0'; // error, no se puede reasignar una variable
 ```
 
 Existe una práctica generalizada de utilizar constantes como alias para valores difíciles de recordar que se conocen antes de la ejecución.
@@ -85,20 +85,20 @@ Estas constantes se nombran con letras mayúsculas y guiones bajos.
 Por ejemplo, hagamos constantes para los colores en el llamado formato "web" (hexadecimal):
 
 ```js
-const COLOR_RED = "#F00";
-const COLOR_GREEN = "#0F0";
-const COLOR_BLUE = "#00F";
-const COLOR_ORANGE = "#FF7F00";
+const COLOR_ROJO = "#F00";
+const COLOR_VERDE = "#0F0";
+const COLOR_AZUL = "#00F";
+const COLOR_NARANJA = "#FF7F00";
 
 // cuando necesitemos elegir un color
-let color = COLOR_ORANGE;
+let color = COLOR_NARANJA;
 alert(color); // #FF7F00
 ```
 
 Ser una "constante" simplemente significa que el valor de una variable nunca cambia. Pero hay constantes que se conocen antes de la ejecución (como un valor hexadecimal para el rojo) y hay constantes que se calculan en tiempo de ejecución, durante la ejecución, pero que no cambian después de su asignación inicial.
 
 ```js
-const pageLoadTime = /* time taken by a webpage to load */;
+const tiempoCargaPagina = /* tiempo que le cuesta carga a la página*/;
 ```
 
 El valor de `pageLoadTime` no se conoce antes de cargar la página, por lo que se nombra normalmente. Pero sigue siendo una constante porque no cambia después de la asignación.
@@ -145,7 +145,7 @@ n = 12.345;
 
 console.log( 1 / 0 ); // Infinity
 
-console.log( "not a number" / 2 ); // NaN, such division is erroneous
+console.log( "no es número" / 2 ); // NaN, este tipo de división es erronea
 ```
 
 `NaN` representa un error computacional. Es el resultado de una operación matemática incorrecta o indefinida.
@@ -165,8 +165,9 @@ let num1 = 2;
 let num2 = 5;
 console.log(`La suma de num1 y num2 es: ${num1 + num2}`); // La suma de num1 y num2 es: 7
 ```
+
 > #### *Tener en cuenta que ...*
-> Las comillas invertidas son comillas de “funcionalidad extendida”. Nos permiten incrustar variables y expresiones en una cadena envolviéndolas en ${…}. Tenga en cuenta que esto sólo se puede hacer entre comillas invertidas.
+> ... las comillas invertidas son comillas de **“funcionalidad extendida”**. Nos permiten incrustar variables y expresiones en una cadena envolviéndolas en `${…}`. Tenga en cuenta que esto sólo se puede hacer entre comillas invertidas.
 
 #### Boolean
 
@@ -175,8 +176,8 @@ El tipo booleano tiene sólo dos valores: verdadero y falso. Este tipo se usa co
 Los valores booleanos también surgen como resultado de comparaciones:
 
 ```js
-let nameFieldChecked = true;
-let ageFieldChecked = false;
+let campoNombreRellenado = true;
+let campoEdadRellenado = false;
 
 let isGreater = 4 > 1;
 console.log( isGreater ); // verdadero (el resultado de la comparación es "si")
@@ -186,7 +187,7 @@ console.log( isGreater ); // verdadero (el resultado de la comparación es "si")
 
 El valor nulo especial no pertenece a ninguno de los tipos descritos anteriormente. Forma un tipo propio separado que contiene solo el valor nulo:
 
-En JavaScript, nulo no es una "referencia a un objeto inexistente" o un "puntero nulo" como en otros lenguajes. Es simplemente un valor especial que representa "nada", "vacío" o "valor desconocido".
+En JavaScript, `null` no es una "referencia a un objeto inexistente" o un "puntero nulo" como en otros lenguajes, es simplemente un valor especial que representa "nada", "vacío" o "valor desconocido".
 
 ```js
 let edad = null;
@@ -203,7 +204,7 @@ let edad;
 console.log(edad); // "undefined"
 ```
 
-Técnicamente, es posible asignar explícitamente undefinido a una variable, pero no es recomendable hacer eso, es preferible usar `null` para asignar un valor “vacío” o “desconocido” a una variable, mientras que `undefined` se reserva como valor inicial predeterminado para cosas no asignadas.
+Técnicamente, es posible asignar explícitamente `undefined` a una variable, pero no es recomendable hacer eso, es preferible usar `null` para asignar un valor “vacío” o “desconocido” a una variable, mientras que `undefined` se reserva como valor inicial predeterminado para cosas no asignadas.
 
 ```js
 let edad = 100;

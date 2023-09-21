@@ -24,11 +24,11 @@ En el siguiente ejemplo, puedes comprobar que ocurre cuando utilizamos el operad
 ```js
 Ejemplo       Resultado                       Explicación
 ---------     ----------                      ------------
-2 + 2         // 4      (Número + número)     2 + 2
-"2" + "2"     // "22"   (String + string)     String(2) + String(2)
-"2" + 2       // "22"   (String + número)     String(2) + 2
-2 + "2"       // "22"   (Número + string)     2 + String(2)
-"a" + 2       // "a2"   (String + número)     String("a") + 2
+2 + 2         // 4      (número + número)     2 + 2
+"2" + "2"     // "22"   (string + string)     string(2) + string(2)
+"2" + 2       // "22"   (string + número)     string(2) + 2
+2 + "2"       // "22"   (número + string)     2 + string(2)
+"a" + 2       // "a2"   (string + número)     string("a") + 2
 ```
 
 Observa que salvo en el primer caso (donde tenemos dos `number`), el operador `+` funciona como un concatenador, es decir, uniendo los dos `string`, y en el caso que uno de ellos no lo sea, lo convierte.
