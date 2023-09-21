@@ -14,11 +14,11 @@ Los programas Javascript se pueden insertar casi en cualquier lugar de un docume
 <!DOCTYPE HTML>
 <html>
 <body>
-  <p>Before the script...</p>
+  <p>Zona antes del script...</p>
   <script>
-    alert( 'Hello, world!' );
+    alert( 'Hola, mundo!' );
   </script>
-  <p>...After the script.</p>
+  <p>... despues del script.</p>
 </body>
 </html>
 ```

@@ -22,7 +22,7 @@ Muestra una ventana modal con un mensaje de texto, un campo de entrada para el v
 * título
 El texto para mostrar al visitante en la ventana.
 * default
-Un segundo parámetro es opcional, ees l valor inicial del campo de entrada del usuario.
+Un segundo parámetro es opcional, es l valor inicial del campo de entrada del usuario.
 
 El usuario puede escribir algo en el campo de entrada del mensaje. Luego obtenemos ese texto en el resultado. O pueden cancelar la entrada presionando Cancelar o presionando la tecla `Esc`.
 
@@ -43,7 +43,7 @@ El resultado es `true` si se presiona OK y `false` en caso contrario.
 
 ```js
 let mayorEdad = confirm("Eres mayor de edad?");
-console.log( isBoss ); // true if OK is pressed
+console.log( mayorEdad ); // true si se presiona en OK
 ```
 
 #### Escribiendo en la consola

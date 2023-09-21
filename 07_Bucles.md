@@ -1,6 +1,6 @@
 # DWEC UT01: Arquitecturas y lenguajes de programación en clientes web.
 
-## Bucles
+## Estructuras repetitivas (Bucles)
 
 En nuestro código muchas veces necesitaremos repetir acciones. Por ejemplo, generar productos de una lista uno tras otro o simplemente ejecutar el mismo código para cada número del 1 al 10.
 
