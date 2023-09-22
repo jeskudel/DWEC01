@@ -35,7 +35,7 @@ if (1) { // 1 es valor truthy
   ...
 }
 
-let cond = (year == 2015); // equality evaluates to true or false
+let cond = (year == 2015); // el operador de comparación evalua true o false
 
 if (cond) {
   ...
