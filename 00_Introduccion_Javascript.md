@@ -104,7 +104,7 @@ Las herramientas modernas hacen que la transpilación sea muy rápida y transpar
 
 Ejemplos de tales lenguajes:
 
-* [CoffeeScript](https://coffeescript.org/) es "azúcar sintáctico" para JavaScript. Introduce una sintaxis más corta, lo que nos permite escribir un código más claro y preciso. Por lo general, a los desarrolladores de Ruby les gusta.
+* [CoffeeScript](https://coffeescript.org/) es "sugar syntax" para JavaScript. Introduce una sintaxis más corta, lo que nos permite escribir un código más claro y preciso. Por lo general, a los desarrolladores de Ruby les gusta.
 * [TypeScript](https://www.typescriptlang.org/) se concentra en agregar "tipado estricto de datos" para simplificar el desarrollo y el soporte de sistemas complejos. Está desarrollado por Microsoft.
 * [Flow](https://flow.org/) también agrega escritura de datos, pero de una manera diferente. Desarrollado por Facebook.
 * [Dart](https://dart.dev/) es un lenguaje independiente que tiene su propio motor que se ejecuta en entornos que no son de navegador (como aplicaciones móviles), pero también se puede transpilar a JavaScript. Desarrollado por Google.
