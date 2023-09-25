@@ -117,7 +117,7 @@ Algunas reglas buenas a seguir son:
 
 * Utilice nombres legibles por humanos como `userName` o `bookId`.
 * No utilizar abreviaturas o nombres cortos como `a`, `b`, `c`, a menos que realmente sepa lo que está haciendo.
-* Haga que los nombres sean lo más descriptivos y concisos posible. Ejemplos de malos nombres son los `datos` y  `resultado``. Solo está bien usarlos si el contexto del código hace que sea excepcionalmente obvio a qué datos o valores hace referencia la variable.
+* Haga que los nombres sean lo más descriptivos y concisos posible. Ejemplos de malos nombres son los `datos` y  `resultado`. Solo está bien usarlos si el contexto del código hace que sea excepcionalmente obvio a qué datos o valores hace referencia la variable.
 
 ### Tipos de datos
 
