@@ -64,7 +64,7 @@ Es posible que te hayas encontrado ejemplos donde dicha etiqueta esté ubicada e
 |----------|----------|----------|
 | En `<head> `  | ANTES de empezar a dibujar la página.  | Página aún no dibujada.   |
 | En `<body>`  |  DURANTE el dibujado de la página.  | Dibujada hasta donde está la etiqueta `<script>`.   |
-| Antes de `</body>`   | DESPUÉS de dibujar la página.   |  	Dibujada al 100%.   |
+| Después de `</body>`   | DESPUÉS de dibujar la página.   |  	Dibujada al 100%.   |
 
 Ten en cuenta que el navegador puede descargar un documento Javascript en cualquier momento de la carga de la página y necesitamos saber cuál es el más oportuno para nosotros.
 
