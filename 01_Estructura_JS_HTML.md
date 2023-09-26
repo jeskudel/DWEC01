@@ -45,7 +45,7 @@ El texto js/index.js no es más que una referencia a un archivo index.js que se 
 La etiqueta `<script>` tiene algunos atributos que rara vez se usan hoy en día pero que aún se pueden encontrar en el código antiguo:
 
 * El atributo de "type": `<script type=…>`
-El antiguo estándar HTML, HTML4, requería que un script tuviera un tipo. Normalmente era tipo="text/javascript". Ya no es necesario. Además, el estándar HTML moderno cambió totalmente el significado de este atributo. Ahora se puede utilizar para módulos JavaScript. Pero ese es un tema avanzado, hablaremos de módulos en otra parte del tutorial.
+El antiguo estándar HTML, HTML4, requería que un script tuviera un tipo. Normalmente era tipo="text/javascript". Ya no es necesario. Además, el estándar HTML moderno cambió totalmente el significado de este atributo. Ahora se puede utilizar para módulos JavaScript.
 
 * El atributo de "language": `<script language=…>`
 Este atributo estaba destinado a mostrar el idioma de la escritura. Este atributo ya no tiene sentido porque JavaScript es el idioma predeterminado. No es necesario utilizarlo.
