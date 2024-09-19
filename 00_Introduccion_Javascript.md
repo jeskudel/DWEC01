@@ -2,7 +2,7 @@
 
 ## Introducción a Javascript
 
-JavaScript se creó inicialmente para "dar vida a las páginas web".
+JavaScript se creó inicialmente para "**dar vida a las páginas web**".
 
 Los programas en este lenguaje se denominan scripts. Se pueden escribir directamente en el HTML de una página web y ejecutarse automáticamente a medida que se carga la página.
 
@@ -114,12 +114,13 @@ Ejemplos de tales lenguajes:
 La lista es mas extensa pero para hacernos una idea es suficiente. De todos modos lo importante aqui es entender que incluso si usamos uno de estos lenguajes transpilados, también debemos saber JavaScript para entender realmente lo que estamos haciendo.
 
 ## Especificaciones y manuales
----
 ### Especificaciones
 
 La especificación [ECMA-262] contiene la información más profunda, detallada y formalizada sobre JavaScript. Define el lenguaje. Pero al estar tan formalizado, es difícil de entender al principio. Entonces, si necesita la fuente de información más confiable sobre los detalles del idioma, la especificación es el lugar correcto. Pero no es para el uso diario.
 
 Cada año se lanza una nueva versión de la especificación. Entre estas versiones, el último borrador de especificaciones se puede encuentrar en el siguiente [enlace](https://tc39.es/ecma262/). Para leer sobre las nuevas funciones de última generación, incluidas aquellas que son denomidas "casi estándar", consulte las propuestas en el siguiente [enlace](https://github.com/tc39/proposals).
+
+Hay muchos usuarios con blogs donde analizan y explican con ejemplo la novedades que vienen con cada versión de ESMAScript. Aqui os dejo unas entradas explicando algunas de la cosas que aprenderemos a utilizar durante este curso. [Primera parte](https://taverasmisael.com/es/blog/javascript-todo-lo-nuevo-desde-es6-hasta-hoy-parte-1) y [segunda parte](https://taverasmisael.com/es/blog/javascript-todo-lo-nuevo-desde-es6-hasta-hoy-parte-2). 
 
 ### Manuales
 
@@ -133,13 +134,11 @@ Aunque, a menudo es mejor usar una búsqueda en Internet en su lugar. Simplement
 
 JavaScript es un lenguaje en desarrollo, se agregan nuevas características regularmente. Para ver su compatibilidad entre los motores basados ​​en navegador y otros, consulte:
 
-* https://caniuse.com: tablas de soporte por función, p. para ver qué motores admiten funciones de criptografía modernas: https://caniuse.com/#feat=cryptography.
-* https://kangax.github.io/compat-table: una tabla con funciones de lenguaje y motores que los admiten o no.
+* https://caniuse.com: tablas de soporte por función, para ver qué motores admiten funciones de criptografía modernas: https://caniuse.com/#feat=cryptography.
 
 Todos estos recursos son útiles en el desarrollo de la vida real, ya que contienen información valiosa sobre los detalles del idioma, su soporte, etc. Es bueno recordarlos (o tener a mano estas páginas) para los casos en que necesite información detallada sobre una función en particular.
 
 ## Desarrollando código
----
 
 El editor de código es el lugar donde los programadores pasan la mayor parte de su tiempo. Hay dos tipos principales de editores de código: IDE y editores ligeros. Mucha gente usa uno de cada tipo para diferentes proyecto con diferentes lenguajes de programación.
 
@@ -177,7 +176,6 @@ Hay muchas opciones, por ejemplo:
 Hay otros grandes editores en el mundo de la programación. Por favor, elige el que más te guste. La elección de un editor, como cualquier otra herramienta, es individual y depende de sus proyectos, hábitos y preferencias personales.
 
 ## La consola de depuración
----
 
 El código es propenso a errores. Es muy probable que cometas errores... ¿de qué estoy hablando? Es *absolutamente* seguro que vas a cometer errores, al menos si eres un humano, no un robot (o ChatGPT).
 

@@ -8,7 +8,7 @@ Por ejemplo, si dentro del documento HTML se encuentra una referencia a un archi
 
 Los programas Javascript se pueden insertar casi en cualquier lugar de un documento HTML utilizando la etiqueta `<script>`.
 
-#### Ejemplo de script interno
+### Ejemplo de script interno
 
 ```js
 <!DOCTYPE HTML>
@@ -23,7 +23,7 @@ Los programas Javascript se pueden insertar casi en cualquier lugar de un docume
 </html>
 ```
 
-#### Ejemplo de script externo
+### Ejemplo de script externo
 
 ```js
 <!DOCTYPE HTML>
@@ -38,9 +38,9 @@ Los programas Javascript se pueden insertar casi en cualquier lugar de un docume
 </html>
 ```
 
-#### Atributos opcionales
+### Atributos opcionales
 
-El texto js/index.js no es más que una referencia a un archivo index.js que se encuentra dentro de una carpeta js, situada en la misma carpeta que el documento HTML del ejemplo. Si en este archivo Javascript, incluímos el console.log() de mensaje de bienvenida, ese mensaje debería aparecer en la consola Javascript al cargar esta página.
+El texto `js/index.js` no es más que una referencia a un archivo index.js que se encuentra dentro de una carpeta js, situada en la misma carpeta que el documento HTML del ejemplo. Si en este archivo Javascript, incluímos el `console.log()` de mensaje de bienvenida, ese mensaje debería aparecer en la consola Javascript al cargar esta página.
 
 La etiqueta `<script>` tiene algunos atributos que rara vez se usan hoy en día pero que aún se pueden encontrar en el código antiguo:
 
@@ -50,13 +50,13 @@ El antiguo estándar HTML, HTML4, requería que un script tuviera un tipo. Norma
 * El atributo de "language": `<script language=…>`
 Este atributo estaba destinado a mostrar el idioma de la escritura. Este atributo ya no tiene sentido porque JavaScript es el idioma predeterminado. No es necesario utilizarlo.
 
-> #### *Tener en cuenta que ...*
+> ### *Tener en cuenta que ...*
 > ... como regla general, sólo los scripts más simples se incluyen en HTML. Los más complejos residen en archivos separados.
 La ventaja de un archivo independiente es que el navegador lo descargará y lo almacenará en su caché.
 >Otras páginas que hacen referencia al mismo script lo tomarán del caché en lugar de descargarlo, por lo que el archivo en realidad se descarga solo una vez.
 >Eso reduce el tráfico y hace que las páginas sean más rápidas.
 
-#### Ubicacion de la etiqueta `<script>`
+### Ubicacion de la etiqueta `<script>`
 
 Es posible que te hayas encontrado ejemplos donde dicha etiqueta esté ubicada en otra parte del documento HTML. Veamos las posibilidades:
 
@@ -68,7 +68,7 @@ Es posible que te hayas encontrado ejemplos donde dicha etiqueta esté ubicada e
 
 Ten en cuenta que el navegador puede descargar un documento Javascript en cualquier momento de la carga de la página y necesitamos saber cuál es el más oportuno para nosotros.
 
-#### Escritura de sentencias
+### Escritura de sentencias
 A la hora de escribir sentencias, podemos agrupar varias en la misma línea pero tiene que estar separada por `;`.
 
 ```js
@@ -102,7 +102,7 @@ En este caso, el código nos mostrara un "6" ya que Javascript no inserta automa
 Pero hay situaciones en las que JavaScript "no logra" asumir un punto y coma cuando realmente es necesario. Los errores que se producen en estos casos son bastante difíciles de encontrar y corregir.
 
 
-#### Utilización de comentarios 
+### Utilización de comentarios 
 A medida que pasa el tiempo, los programas se vuelven cada vez más complejos. Se hace necesario agregar comentarios que describan qué hace el código y por qué.
 
 Los comentarios se pueden colocar en cualquier lugar de un script. No afectan su ejecución porque el motor simplemente los ignora.
@@ -125,7 +125,7 @@ alert('Hola');
 alert('Mundo');
 ```
 
-### La especificación ECMAScript
+## La especificación ECMAScript
 
 ECMAScript es la especificación donde se mencionan todos los detalles de cómo debe funcionar y comportarse Javascript en un navegador. De esta forma, los diferentes navegadores (Chrome, Firefox, Opera, Edge, Safari...) saben como deben desarrollar los motores de Javascript para que cualquier código o programa funcione exactamente igual, independientemente del navegador que se utilice.
 
