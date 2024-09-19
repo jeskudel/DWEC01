@@ -134,7 +134,7 @@ ECMAScript es la especificación donde se mencionan todos los detalles de cómo 
 <p align="center"><a href="https://www.geeksforgeeks.org/javascript-versions/">Versiones de ECMAScript</a></p>
 </p>
 
-#### La sentencia `use strict`
+### La sentencia `use strict`
 
 En el año 2009 cuando apareció ECMAScript 5 (ES5),se agregó nuevas funciones al lenguaje y modificó algunas de las existentes. Para que el código antiguo siga funcionando, la mayoría de estas modificaciones están desactivadas de forma predeterminada, debe habilitarlos explícitamente con una directiva especial: `"use strict"` o `'use strict'` al principio de 
 
