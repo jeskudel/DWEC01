@@ -11,10 +11,10 @@ let edad = 30;
 ```
 Podemos comprobar esto mediante las herramientas de depuración de los navegadores utilizando un `console.log(nombre)` o un `alert(edad)`.
 
-> #### *Tener en cuenta que ...*
-> ...en scripts mas antiguos habras visto la palabra reservada "var" en vez de "let". En el fondo se utilizan para lo mismo pero hay [diferencias](https://sentry.io/answers/difference-between-let-and-var-in-javascript/) entre ellas. Nosotros acostumbraremos a utilizar "let" ya que aparecio en una versión de ECMAScript posterior (ECMAScript 2015).
+> ### *Tener en cuenta que ...*
+> ...en scripts mas antiguos habras visto la palabra reservada "**var**" en vez de "**let**". En el fondo se utilizan para lo mismo pero hay [diferencias](https://sentry.io/answers/difference-between-let-and-var-in-javascript/) entre ellas. **Nosotros acostumbraremos a utilizar "let"** ya que aparecio en una versión de ECMAScript posterior (ECMAScript 2015).
 
-#### Reglas de nombres de variables
+### Reglas de nombres de variables
 
 Hay 2 limitaciones a la hora de nombrar variables en JS:
 * Los nombres solo pueden contener letras, digitos o simbolo "_" y "$".
@@ -68,7 +68,7 @@ variable = 5; // error: variable no esta definido
 alert(num); // 
 ```
 
-#### Constantes
+### Constantes
 
 Para declarar una variable constante (inmutable), hacemos uso de la palabra reservada `const`. Cuando un programador está seguro de que una variable nunca cambiará, puede declararla con `const` para garantizar y comunicar claramente ese hecho a todos.
 
@@ -101,11 +101,11 @@ Ser una "constante" simplemente significa que el valor de una variable nunca cam
 const tiempoCargaPagina = /* tiempo que le cuesta carga a la página*/;
 ```
 
-El valor de `pageLoadTime` no se conoce antes de cargar la página, por lo que se nombra normalmente. Pero sigue siendo una constante porque no cambia después de la asignación.
+El valor de `tiempoCargaPagina` no se conoce antes de cargar la página, por lo que se nombra normalmente (en minusculas), pero sigue siendo una constante porque no cambia después de la asignación.
 
 En otras palabras, las constantes con nombres en mayúsculas sólo se utilizan como alias para valores "hard-codeados".
 
-#### Buenas practicas
+### Buenas practicas
 
 La denominación de variables es una de las habilidades más importantes y complejas de la programación. Un vistazo rápido a los nombres de las variables puede revelar qué código fue escrito por un desarrollador principiante o por un desarrollador experimentado.
 
@@ -119,7 +119,7 @@ Algunas reglas buenas a seguir son:
 * No utilizar abreviaturas o nombres cortos como `a`, `b`, `c`, a menos que realmente sepa lo que está haciendo.
 * Haga que los nombres sean lo más descriptivos y concisos posible. Ejemplos de malos nombres son los `datos` y  `resultado`. Solo está bien usarlos si el contexto del código hace que sea excepcionalmente obvio a qué datos o valores hace referencia la variable.
 
-### Tipos de datos
+## Tipos de datos
 
 Un valor en JavaScript siempre es de un tipo determinado. Por ejemplo, una cadena o un número. Hay ocho tipos de datos básicos en JavaScript. 
 
@@ -132,7 +132,7 @@ mensaje = 123456;
 
 Los lenguajes de programación que permiten este tipo de cosas, como JavaScript, se denominan "tipados dinámicamente", lo que significa que existen tipos de datos, pero las variables no están vinculadas a ninguno de ellos.
 
-#### Number
+### Number
 
 El tipo de número representa números enteros y de coma flotante.
 Hay muchas operaciones con números, multiplicación `*`, división `/`, suma `+`, resta `-`, etc.
@@ -152,7 +152,7 @@ console.log( "no es número" / 2 ); // NaN, este tipo de división es erronea
 
 Hacer operaciones matemáticas es "seguro" en JavaScript. Podemos hacer cualquier cosa: dividir por cero, tratar cadenas no numéricas como números, etc. El script nunca se detendrá ante un error fatal. En el peor de los casos, obtendremos `NaN` como resultado.
 
-#### String
+### String
 
 Una cadena de texto en Javascript tiene que estar encapsulado entre comillas (simples o dobles).
 
@@ -166,10 +166,10 @@ let num2 = 5;
 console.log(`La suma de num1 y num2 es: ${num1 + num2}`); // La suma de num1 y num2 es: 7
 ```
 
-> #### *Tener en cuenta que ...*
+> ### *Tener en cuenta que ...*
 > ... las comillas invertidas son comillas de **“funcionalidad extendida”**. Nos permiten incrustar variables y expresiones en una cadena envolviéndolas en `${…}`. Tenga en cuenta que esto sólo se puede hacer entre comillas invertidas.
 
-#### Boolean
+### Boolean
 
 El tipo booleano tiene sólo dos valores: verdadero y falso. Este tipo se usa comúnmente para almacenar valores de sí/no: verdadero significa "sí, correcto" y falso significa "no, incorrecto".
 
@@ -183,7 +183,7 @@ let isGreater = 4 > 1;
 console.log( isGreater ); // verdadero (el resultado de la comparación es "si")
 ```
 
-#### Null
+### Null
 
 El valor nulo especial no pertenece a ninguno de los tipos descritos anteriormente. Forma un tipo propio separado que contiene solo el valor nulo:
 
@@ -193,7 +193,7 @@ En JavaScript, `null` no es una "referencia a un objeto inexistente" o un "punte
 let edad = null;
 ```
 
-#### Undefined
+### Undefined
 
 Destaca también el valor especial `undefined`. Crea un tipo propio, al igual que `null`.
 
@@ -213,7 +213,7 @@ edad = undefined;
 console.log(edad); // "undefined"
 ```
 
-#### Objetos, funciones y simbolos
+### Objetos, funciones y simbolos
 
 Todos los tipos de datos antes vistos se denominan "primitivos" porque sus valores pueden contener sólo una cosa (ya sea una cadena, un número o lo que sea). Por el contrario, los `objects` se utilizan para almacenar colecciones de datos y entidades más complejas.
 
@@ -244,7 +244,7 @@ Las últimas tres líneas pueden necesitar una explicación adicional:
 *  El resultado de `typeof null` es `object`. Se trata de un error oficialmente reconocido en typeof, que proviene de los primeros días de JavaScript y se mantiene por motivos de compatibilidad. Definitivamente, null no es un objeto. Es un valor especial con un tipo propio.
 *  El resultado de `typeof alert` es `functión`, porque la `alert` es una función. Estudiaremos funciones en los próximos capítulos donde también veremos que no existe un tipo de "función" especial en JavaScript. Las funciones pertenecen al tipo de objeto. Pero typeof los trata de manera diferente y devuelve "función". Esto también proviene de los primeros días de JavaScript.
 
-> #### *Intentalo tu mismo...*
+> ### *Intentalo tu mismo...*
 > Cual es la salida que producirá este script en la consola?
 > ```js
 > let name = "Ilya";
