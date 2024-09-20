@@ -19,9 +19,9 @@ La funcion `prompt` acepta 2 parametros:
 result = prompt(titulo, [default]);
 ```
 Muestra una ventana modal con un mensaje de texto, un campo de entrada para el visitante y los botones Aceptar/Cancelar.
-* título
+* `título`:
 El texto para mostrar al visitante en la ventana.
-* default
+* `default`:
 Un segundo parámetro es opcional, es l valor inicial del campo de entrada del usuario.
 
 El usuario puede escribir algo en el campo de entrada del mensaje. Luego obtenemos ese texto en el resultado. O pueden cancelar la entrada presionando Cancelar o presionando la tecla `Esc`.

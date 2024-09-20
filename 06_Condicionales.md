@@ -11,6 +11,7 @@ La sentencia `if(...)` evalua la condición que está entre parentesis. Si el re
 let year = prompt('En que año se publico ES2015?', '');
 if (year == 2015) alert( 'Correcto!' );
 
+//otra manera de escribirlo
 if (year == 2015) {
   console.log( "Correcto!" );
   console.log( "Eres muy listo" );
@@ -19,9 +20,9 @@ if (year == 2015) {
 
 Se recomienda envolver su bloque de código con llaves `{}` cada vez que se usa una declaración `if`, incluso si solo hay una linea para ejecutar, mejora la legibilidad.
 
-#### Conversión booleana
+### Conversión booleana
 
-La declaración if (…) evalúa la expresión entre paréntesis y convierte el resultado a booleano. Recordemos las reglas de conversión de tipos:
+La declaración `if (…)` evalúa la expresión entre paréntesis y convierte el resultado a booleano. Recordemos las reglas de conversión de tipos:
 
 * Un número `0`, una cadena vacía `""`, `null`, `undefined` y `NaN` se vuelven `false`. 
 * Cualquier otro valor se convierte a `true`

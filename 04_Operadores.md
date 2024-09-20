@@ -66,7 +66,7 @@ Al margen de los anteriores, también tenemos los operadores de asignación. Est
 | Multiplicación y asignación | `a *= b` | Es equivalente a `a = a * b`. |
 | División y asignación | `a /= b` | Es equivalente a `a = a / b`. |
 | Módulo y asignación | `a %= b` | Es equivalente a `a = a % b`. |
-| Exponenciación y asignación | `a ** b` | Es equivalente a a` = a ** b.` |
+| Exponenciación y asignación | `a **= b` | Es equivalente a a` = a ** b.` |
 
 ### Operadores de comparación
 Los operadores de comparación son aquellos que utilizamos en nuestro código (generalmente, en el interior de un `if`, aunque no es el único sitio donde podemos utilizarlos) para realizar comprobaciones. Estas expresiones de comparación devuelven un **booleano** con un valor de `true` o `false`.
@@ -152,11 +152,11 @@ console.log( false == 0 ); // true
 console.log( '' == false ); // true
 ```
 
-Esto sucede porque el operador de igualdad == convierte operandos de diferentes tipos en números. Una cadena vacía, al igual que false, se convierte en cero.
+Esto sucede porque el operador de igualdad `==` convierte operandos de diferentes tipos en números. Una cadena vacía, al igual que false, se convierte en cero.
 
-¿Qué hacer si queremos diferenciar 0 de falso?
+¿Qué hacer si queremos diferenciar `0` de `false`?
 
-Un operador de igualdad estricta === verifica la igualdad sin conversión de tipo.
+Un operador de igualdad estricta `===` verifica la igualdad sin conversión de tipo.
 
 ```js
 console.log( 0 === false ); // false, no son del mismo tipo

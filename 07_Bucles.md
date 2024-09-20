@@ -14,19 +14,19 @@ while (condición) {
 }
 ```
 
-Una única ejecución del cuerpo del bucle se denomina "iteración". El bucle del ejemplo realiza tres iteraciones.
+Una única ejecución del cuerpo del bucle se denomina "**iteración**". El bucle del ejemplo realiza tres iteraciones.
 
 ```js
 let i = 0;
-while (i < 3) { // muestra 0, luego 1, luego 2
-  alert( i );
+while (i < 3) { 
+  alert( i ); // muestra 0, luego 1, luego 2
   i++;
 }
 ```
 
-Si faltara `i++` en el ejemplo anterior, el bucle se repetiría (en teoría) para siempre. En la práctica, el navegador proporciona formas de detener dichos bucles y, en JavaScript del lado del servidor, podemos finalizar el proceso.
+Si faltara `i++` en el ejemplo anterior, el bucle se repetiría (en teoría) para siempre. En la práctica, el navegador proporciona formas de detener dichos bucles y, en JavaScript del lado del servidor (NodeJS), podemos finalizar el proceso.
 
-Cualquier expresión o variable puede ser una condición de bucle, no solo comparaciones: la condición se evalúa y se convierte en booleana mediante while.
+Cualquier expresión o variable puede ser una condición de bucle, no solo comparaciones: la condición se evalúa y se convierte en booleana mediante `while`.
 
 Por ejemplo, una forma más corta de escribir while (i != 0) es while (i):
 
@@ -60,7 +60,7 @@ do {
 Esta variante se utiliza cuando se quiere ejecutar el cuerpo del bucle al menos una vez sin importar cual sea la condición, normalmente es preferible utilizar la forma simple `while () {....}`.
 
 ### Bucle "for"
-Este tipo de bucle te deja repetir un bloque de instrucciones un número *limitado* de veces. Es mas complejo pero es utilizado mas habitualmente.
+Este tipo de bucle te deja repetir un bloque de instrucciones un número **limitado** de veces. Es mas complejo pero es utilizado mas habitualmente.
 
 ```js
 for (begin; condition; step) {
@@ -111,9 +111,7 @@ alert( 'Suma: ' + sum );
 
 La directiva `break` se activa en la línea  si el usuario ingresa una línea vacía o cancela la entrada. Detiene el bucle inmediatamente, pasando el control a la primera línea después del bucle. Es decir, `alert`.
 
-La combinación "bucle infinito + p`break`" es ideal para situaciones en las que es necesario comprobar el estado de un bucle no al principio o al final del bucle, sino en el medio o incluso en varios lugares de su cuerpo.
-
-#### Salta a la siguiente iteracion con "continue"
+#### Saltar a la siguiente iteracion con "continue"
 La directiva `continue` es como una versión "light" de `break`. No detiene el bucle por completo, sino que detiene la iteración actual e inicia una nueva (evaluando la condición en cada caso).
 
 ```js
@@ -149,7 +147,7 @@ for (let i = 0; i < 10; i++) {
 > (i > 5) ? alert(i) : continue; // continue no se puede utilizar así
 > ```
 
-#### Otros tipos de bucles
+### Otros tipos de bucles
 
 Ademas de estos bucles, existen otros tipos de bucles que se estudiaran mas adelante cuando vean los conceptos de array y objetos en los que la utilización de estos es mas intuitiva y de mas ayuda.
 * Bucle `for ... in`.

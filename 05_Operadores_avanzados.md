@@ -49,7 +49,10 @@ Anteriormente, ya habíamos hablado del operador de **resta unaria** (negación)
 ```
 
 ### Operador AND lógico
-El operador lógico AND establece una condición donde devolverá el primer valor si es false, o el segundo valor si el primero es true. Esto se puede leer de forma que «devuelve b si a y b son verdaderos, sino a».
+El operador `and` (`&&,` conjunción lógica) es conjunto de operandos que devuelve valor `true` sólo si todos los operandos son `true`. De lo contrario será `false`.
+
+En términos más generales, el operador **devuelve el valor del primer operando falso encontrado al evaluar de izquierda a derecha, o el valor del último operando** si todos son veracándolos.
+
 ```js
 false && false      // false (si ninguno de los dos es true, false)
 true && false       // false (idem)
@@ -68,7 +71,9 @@ null && 55          // null (se evalua como false && true, devuelve el primero)
 ```
 
 ### Operador OR lógico
-El operador lógico OR establece una condición donde devolverá el primer valor si es true, o el segundo valor si el primero es false. Esto se puede leer de forma que «devuelve a (si es verdadero), o si no, b».
+
+El operador `or` (`||`, disyunción lógica) es conjunto de operandos que devuelve valor `true` si alguno de los operandos es `true`. De lo contrario será `false`.
+
 
 ```js
 false || false     // false (si ninguno de los dos es true, false)
@@ -77,7 +82,7 @@ false || true      // true (idem)
 true || true       // true (idem)
 ```
 
-Sin embargo, ten en cuenta que podemos utilizarlo con otros tipos de datos. En el anterior, los valores repetidos no hay que diferenciarlos: si false || false te da igual que false devuelva. Eso no ocurre con otros tipos de datos. Recuerda que cualquier valor superior a 0 es considerado true como `boolean` y que cualquier valor que sea 0 o fals, es false.
+Sin embargo, ten en cuenta que podemos utilizarlo con otros tipos de datos. En el anterior, los valores repetidos no hay que diferenciarlos: si es `false || false` te da igual que false devuelva. Eso no ocurre con otros tipos de datos. Recuerda que cualquier valor superior a 0 es considerado `true` como `boolean` y que cualquier valor que sea 0 o falso, es `false`.
 
 ```js
 0 || null          // null (se evalua como false || false, devuelve el segundo)
@@ -86,7 +91,7 @@ Sin embargo, ten en cuenta que podemos utilizarlo con otros tipos de datos. En e
 4 || 10            // 4 (se evalua como true || true, devuelve el primero)
 ```
 
-Teniendo todo esto en cuenta, el operador || nos podría venir bastante bien para situaciones donde, por ejemplo, tenemos una variable name que no sabemos a ciencia cierta si está definida y queremos crear una nueva variable userName con el valor de name, o sino, un valor por defecto "Unknown name":
+Teniendo todo esto en cuenta, el operador `||` nos podría venir bastante bien para situaciones donde, por ejemplo, tenemos una variable name que no sabemos a ciencia cierta si está definida y queremos crear una nueva variable `userName` con el valor de `name`, o sino, un valor por defecto `"Unknown name"`:
 
 ```js
 const userName = name || "Unknown name";
@@ -132,5 +137,3 @@ let apodo = "elPelos";
 // muestra el primer valor definido:
 alert(nombre ?? apellido ?? apodo ?? "Anonimo"); // elPelos
 ```
-
-Ten en cuenta que en el segundo caso, la propiedad `ammo` es `undefined`, ya que no está definida.
