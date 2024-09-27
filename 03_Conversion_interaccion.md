@@ -1,11 +1,10 @@
 # DWEC UT01: Arquitecturas y lenguajes de programación en clientes web.
 
-## Interacción con el usuario y conversión de datos
-### Interacción con el usuario
+## Interacción con el usuario
 
 Como usaremos el navegador como nuestro entorno de demostración, veamos un par de funciones para interactuar con el usuario: `alert`, `prompt` y `confirm`.
 
-#### Alert
+### Alert
 Este ya lo hemos visto. Muestra un mensaje y espera a que el usuario presione “OK”.
 
 ```js
@@ -13,7 +12,7 @@ alert("Hola Mundo!");
 ```
 La miniventana con el mensaje se llama ventana modal. La palabra "modal" significa que el visitante no puede interactuar con el resto de la página, presionar otros botones, etc., hasta que haya manejado la ventana. En este caso, hasta que presionen "OK".
 
-#### Prompt
+### Prompt
 La funcion `prompt` acepta 2 parametros:
 ```js
 result = prompt(titulo, [default]);
@@ -33,7 +32,7 @@ let edad = prompt("Cual es tu edad", 28);
 alert(`Tienes ${edad} años!`);
 ```
 
-#### Confirm
+### Confirm
 La función confirmar muestra una ventana modal con una pregunta y dos botones: Aceptar y Cancelar:
 
 ```js
@@ -46,7 +45,7 @@ let mayorEdad = confirm("Eres mayor de edad?");
 console.log( mayorEdad ); // true si se presiona en OK
 ```
 
-#### Escribiendo en la consola
+### Escribiendo en la consola
 
 Para poder escribir información en la consola de depuración, tenemos el objeto `console` que nos permite ir describiendo lo que esta sucediendo o informar de algún error que haya podido suceder. La forma mas sencilla de utilización seria `console.log()`
 
@@ -58,16 +57,16 @@ console.log(num);   // 5
 console.log(num+5); // 10
 ```
 
-> #### *Tener en cuenta que ...*
+> ### *Tener en cuenta que ...*
 > ... existen otra maneras diferentes de "loggear" lo que queremos y se muestre de manera diferente en función de lo que ocurra en el script. De momento nosotros utilizaremos `console.log()`, pero podeis investigar sobre los otros metodos que se pueden utilizar, [enlace.](https://medium.com/theleanprogrammer/javascript-explore-different-types-of-console-methods-73c09e526d58) 
 
-### Conversión de datos
+## Conversión de datos
 
 La mayoría de las veces, los operadores y funciones convierten automáticamente los valores que se les dan al tipo correcto. Por ejemplo, la `alert` convierte automáticamente cualquier valor en una cadena para mostrarlo. Las operaciones matemáticas convierten valores en números.
 
 Pero también hay casos en los que necesitamos convertir explícitamente un valor al tipo esperado.
 
-#### Conversion de strings
+### Conversion de strings
 
 La conversión de `string` ocurre cuando necesitamos la forma de un valor en formato de cadena de texto.
 
@@ -85,7 +84,7 @@ alert(typeof valor); // string
 
 La conversión de cadenas es bastante obvia. Un `false` se convierte en "false", un `null` se convierte en "null", etc.
 
-#### Conversion de numbers
+### Conversion de numbers
 
 La conversión numérica en funciones y expresiones matemáticas se produce automáticamente. Por ejemplo, cuando la división / se aplica a elementos que no son números:
 
@@ -111,7 +110,7 @@ Si la cadena no es un número válido, el resultado de dicha conversión es `NaN
 let edad = Number("cadena de texto que podria introducirse");
 alert(edad); // NaN
 ```
-#### Reglas de conversion numéricas
+### Reglas de conversion numéricas
 
 | Valor | ¿Se convierte en ... |
 |----------|----------|
@@ -127,7 +126,7 @@ alert( Number(true) );        // 1
 alert( Number(false) );       // 0
 ```
 
-#### Conversion boleana
+### Conversion boleana
 
 La conversion booleana es muy simple. Se hace de manera lógica (veremos las operaciones lógicas mas adelante), y podemos utiliza la manera explicita con `Boolean(valor)`.
 
