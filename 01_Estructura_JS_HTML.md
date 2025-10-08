@@ -130,8 +130,8 @@ alert('Mundo');
 ECMAScript es la especificación donde se mencionan todos los detalles de cómo debe funcionar y comportarse Javascript en un navegador. De esta forma, los diferentes navegadores (Chrome, Firefox, Opera, Edge, Safari...) saben como deben desarrollar los motores de Javascript para que cualquier código o programa funcione exactamente igual, independientemente del navegador que se utilice.
 
 <p align="center"> 
-<img src="./img/js-versions.png" width="60%" height="60%" style="display: block; margin: 0 auto" />
-<p align="center"><a href="https://www.geeksforgeeks.org/javascript-versions/">Versiones de ECMAScript</a></p>
+<img src="./img/ES-versiones.jpeg" width="60%" height="60%" style="display: block; margin: 0 auto" />
+<p align="center"><a href="https://www.tutorialspoint.com/javascript/javascript_versions.htm">Versiones de ECMAScript</a></p>
 </p>
 
 ### La sentencia `use strict`

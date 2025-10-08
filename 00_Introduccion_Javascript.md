@@ -80,14 +80,14 @@ Ejemplos de tales restricciones son:
 <img src="./img/same_origin_policy.png" width="60%" height="60%" style="display: block; margin: 0 auto" />
 </p>
 
-Such limitations do not exist if JavaScript is used outside of the browser, for example on a server. Modern browsers also allow plugins/extensions which may ask for extended permissions.
+Estas limitaciones no existen si JavaScript se utiliza fuera del navegador, por ejemplo, en un servidor. Los navegadores modernos también permiten plugins/extensiones que pueden solicitar permisos ampliados.
 
 ### ¿Qué hace "único" a JavaScript?
 
 Hay al menos tres cosas geniales sobre JavaScript:
 
 > * Integración completa con HTML/CSS.
-> * Las cosas simples se hacen simplemente.
+> * Las cosas simples se hacen de manera simple.
 > * Compatible con todos los principales navegadores y habilitado de forma predeterminada.
 
 JavaScript es la única tecnología de navegador que combina estas tres cosas. Eso es lo que hace que JavaScript sea único. Por eso es la herramienta más extendida para crear interfaces de navegador.
@@ -116,11 +116,13 @@ La lista es mas extensa pero para hacernos una idea es suficiente. De todos modo
 ## Especificaciones y manuales
 ### Especificaciones
 
-La especificación [ECMA-262] contiene la información más profunda, detallada y formalizada sobre JavaScript. Define el lenguaje. Pero al estar tan formalizado, es difícil de entender al principio. Entonces, si necesita la fuente de información más confiable sobre los detalles del idioma, la especificación es el lugar correcto. Pero no es para el uso diario.
+La especificación *ECMA-262* contiene la información más profunda, detallada y formalizada sobre JavaScript. Define el lenguaje pero al estar tan formalizado, es difícil de entender al principio.
 
 Cada año se lanza una nueva versión de la especificación. Entre estas versiones, el último borrador de especificaciones se puede encuentrar en el siguiente [enlace](https://tc39.es/ecma262/). Para leer sobre las nuevas funciones de última generación, incluidas aquellas que son denomidas "casi estándar", consulte las propuestas en el siguiente [enlace](https://github.com/tc39/proposals).
 
-Hay muchos usuarios con blogs donde analizan y explican con ejemplo la novedades que vienen con cada versión de ESMAScript. Aqui os dejo unas entradas explicando algunas de la cosas que aprenderemos a utilizar durante este curso. [Primera parte](https://taverasmisael.com/es/blog/javascript-todo-lo-nuevo-desde-es6-hasta-hoy-parte-1) y [segunda parte](https://taverasmisael.com/es/blog/javascript-todo-lo-nuevo-desde-es6-hasta-hoy-parte-2). 
+Hay muchos usuarios con blogs donde analizan y explican con ejemplo la novedades que vienen con cada versión de ESMAScript. Aqui os dejo unas entradas explicando algunas de la cosas que aprenderemos a utilizar durante este curso. [Articulo 1](https://www.campusmvp.es/recursos/post/ecmascript-2025-todas-las-novedades-y-aplicaciones-practicas-para-impulsar-tu-codigo-javascript.aspx?srsltid=AfmBOopmwGGyMpIFgFa48-H8AJdk8k6h2K1lswkUKkaIZiX08r_1a6BM) y [Articulo 2](https://www.itdo.com/blog/novedades-en-ecmascript-2025-lo-mejor-del-nuevo-javascript/).
+
+Este tipo de articulos los suelen publicar expertos/influencer/programadores cada vez que sale una versión nueva.
 
 ### Manuales
 
@@ -150,8 +152,8 @@ Un IDE carga el proyecto (que puede ser muchos archivos), permite la navegación
 
 Si aún no ha seleccionado un IDE, considere las siguientes opciones:
 
-* [Visual Studio Code](https://code.visualstudio.com/) (multiplataforma, gratuito).
-* [WebStorm](https://www.jetbrains.com/webstorm/) (multiplataforma, de pago).
+* [Visual Studio Code](https://code.visualstudio.com/) (multiplataforma, codigo abierto).
+* [WebStorm](https://www.jetbrains.com/webstorm/) (multiplataforma, de gratuito).
 
 Para Windows, también existe "Visual Studio", que no debe confundirse con "Visual Studio Code". “Visual Studio” es un poderoso y  editor solo para Windows, muy adecuado para la plataforma .NET. También es bueno en JavaScript. También hay una versión gratuita de [Visual Studio Community](https://visualstudio.microsoft.com/es/vs/community/).
 
@@ -177,7 +179,7 @@ Hay otros grandes editores en el mundo de la programación. Por favor, elige el 
 
 ## La consola de depuración
 
-El código es propenso a errores. Es muy probable que cometas errores... ¿de qué estoy hablando? Es *absolutamente* seguro que vas a cometer errores, al menos si eres un humano, no un robot (o ChatGPT).
+El código es propenso a errores. Es muy probable que cometas errores... ¿de qué estoy hablando? Es *absolutamente* seguro que vas a cometer errores, al menos si eres un humano, no un robot (o ChatGPT que suele fallar a menudo).
 
 Pero en el navegador, los usuarios no ven errores por defecto. Entonces, si algo sale mal en el guión, no veremos qué está roto y no podremos arreglarlo. Para ver errores y obtener mucha otra información útil sobre scripts, se han incorporado "herramientas de desarrollo" en los navegadores.
 
